@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cell{
+                width:100px;height:100px;
+                font-size:60pt;text-align:center;
+            }
+        </style>
+        <script>
+           var count=0;
+            function clickMe(e){
+               if(count++%2==0){
+                 e.textContent="〇";
+             }else{
+                 e.textContent="x";
+             }
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+            </tr>
+            <tr>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+            </tr>
+            <tr>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+                <td class="cell" onclick="clickMe(this)"></td>
+            </tr>
+        </table>
+    </body>
+</html>
