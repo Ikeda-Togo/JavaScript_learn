@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <script>
+            let count = 0;
+            function hello() {
+                count++
+                const header = document.querySelector('h1');
+                if (header.innerHTML === 'Hello!') {
+                    header.innerHTML = 'Goodbye!';
+                }
+                else {
+                    header.innerHTML = 'Hello!';
+                }
+
+                if(count % 10 ===0){
+                    alert("are you ok?");
+                }
+            }
+        </script>
+        <script>
+            alert('Hello, world!');
+        </script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <h1>Thanks you</h1>
+        <button onclick="hello()">Click Here</button>
+    </body>
+</html>
