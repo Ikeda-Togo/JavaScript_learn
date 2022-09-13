@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@serialport/parser-readline": "^10.3.0",
+    "node-worker-threads-pool": "^1.5.1",
+    "serialport": "^10.4.0",
+    "worker-thread": "^1.1.0"
+  }
+}
